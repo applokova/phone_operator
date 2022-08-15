@@ -3,16 +3,16 @@ package src;
 public class Main {
     public static void main(String[] args) {
 
-        int a = 125;
-        int b = 1245;
-        int c = a + b;
+        int initialAmount = 125;
+        int replenishment = 1245;
+        int sum = initialAmount + replenishment;
 
-        if (b >= 1000){
-            int d = b / 100 + c;
-            System.out.println(d);
+        if (replenishment >= 1000){
+            int bonus = replenishment / 100 + sum;
+            System.out.println(bonus);
         }
         else{
-            System.out.println(c);
+            System.out.println(sum);
         }
     }
 }
